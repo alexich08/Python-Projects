@@ -1,0 +1,9 @@
+food_name = input()
+
+if food_name == "banana" or food_name == "apple" or food_name == "kiwi" or food_name == "cherry" or food_name == "lemon" or food_name == "grapes":
+    food = "fruit"
+elif food_name == "tomato" or food_name == "cucumber" or food_name == "pepper" or food_name == "carrot":
+    food = "vegetable"
+else:
+    food = "unknown"
+print(food)
