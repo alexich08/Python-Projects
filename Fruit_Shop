@@ -1,0 +1,44 @@
+fruit_name = input()
+day_of_the_week = input()
+quantity_of_fruit = float(input())
+price = 0.00
+
+if day_of_the_week == "Monday" or day_of_the_week == "Tuesday" or day_of_the_week == "Wednesday" or day_of_the_week == "Thursday" or day_of_the_week == "Friday":
+    if fruit_name == "banana":
+        price = 2.50 * quantity_of_fruit
+    elif fruit_name == "apple":
+        price = 1.20 * quantity_of_fruit
+    elif fruit_name == "orange":
+        price = 0.85 * quantity_of_fruit
+    elif fruit_name == "grapefruit":
+        price = 1.45 * quantity_of_fruit
+    elif fruit_name == "kiwi":
+        price = 2.70 * quantity_of_fruit
+    elif fruit_name == "pineapple":
+        price = 5.50 * quantity_of_fruit
+    elif fruit_name == "grapes":
+        price = 3.85 * quantity_of_fruit
+    else:
+        print("error")
+        exit()
+
+if day_of_the_week == "Saturday" or day_of_the_week == "Sunday":
+    if fruit_name == "banana":
+        price = 2.70 * quantity_of_fruit
+    elif fruit_name == "apple":
+        price = 1.25 * quantity_of_fruit
+    elif fruit_name == "orange":
+        price = 0.90 * quantity_of_fruit
+    elif fruit_name == "grapefruit":
+        price = 1.60 * quantity_of_fruit
+    elif fruit_name == "kiwi":
+        price = 3.00 * quantity_of_fruit
+    elif fruit_name == "pineapple":
+        price = 5.60 * quantity_of_fruit
+    elif fruit_name == "grapes":
+        price = 4.20 * quantity_of_fruit
+    else:
+        print("error")
+        exit()
+
+print(f"{price:.2f}")
