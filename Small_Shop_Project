@@ -1,0 +1,41 @@
+product_type = input()
+town_shop = input()
+amount_product = float(input())
+
+if town_shop == "Sofia":
+    if product_type == "coffee":
+        price = amount_product * 0.50
+    elif product_type == "water":
+        price = amount_product * 0.80
+    elif product_type == "beer":
+        price = amount_product * 1.20
+    elif product_type == "sweets":
+        price = amount_product * 1.45
+    elif product_type == "peanuts":
+        price = amount_product * 1.60
+
+if town_shop == "Plovdiv":
+    if product_type == "coffee":
+        price = amount_product * 0.40
+    elif product_type == "water":
+        price = amount_product * 0.70
+    elif product_type == "beer":
+        price = amount_product * 1.15
+    elif product_type == "sweets":
+        price = amount_product * 1.30
+    elif product_type == "peanuts":
+        price = amount_product * 1.50
+
+if town_shop == "Varna":
+    if product_type == "coffee":
+        price = amount_product * 0.45
+    elif product_type == "water":
+        price = amount_product * 0.70
+    elif product_type == "beer":
+        price = amount_product * 1.10
+    elif product_type == "sweets":
+        price = amount_product * 1.35
+    elif product_type == "peanuts":
+        price = amount_product * 1.55
+
+print(price)
