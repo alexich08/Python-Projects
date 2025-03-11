@@ -22,7 +22,7 @@ if day_of_the_week == "Monday" or day_of_the_week == "Tuesday" or day_of_the_wee
         print("error")
         exit()
 
-if day_of_the_week == "Saturday" or day_of_the_week == "Sunday":
+elif day_of_the_week == "Saturday" or day_of_the_week == "Sunday":
     if fruit_name == "banana":
         price = 2.70 * quantity_of_fruit
     elif fruit_name == "apple":
@@ -40,5 +40,9 @@ if day_of_the_week == "Saturday" or day_of_the_week == "Sunday":
     else:
         print("error")
         exit()
+
+else:
+    print("error")
+    exit()
 
 print(f"{price:.2f}")
