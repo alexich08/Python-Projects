@@ -1,0 +1,54 @@
+city = input()
+sold_quantity = float(input())
+commission = 0.00
+
+if sold_quantity < 0:
+    print("error")
+    exit()
+
+if city == "Sofia":
+    if 0 <= sold_quantity <= 500:
+        commission = 0.05 * sold_quantity
+    elif sold_quantity <= 1000:
+        commission = 0.07 * sold_quantity
+    elif sold_quantity <= 10000:
+        commission = 0.08 * sold_quantity
+    elif sold_quantity > 10000:
+        commission = 0.12 * sold_quantity
+    else:
+        print("error")
+        exit()
+
+elif city == "Varna":
+    if 0 <= sold_quantity <= 500:
+        commission = 0.045 * sold_quantity
+    elif sold_quantity <= 1000:
+        commission = 0.075 * sold_quantity
+    elif sold_quantity <= 10000:
+        commission = 0.10 * sold_quantity
+    elif sold_quantity > 10000:
+        commission = 0.13 * sold_quantity
+    else:
+        print("error")
+        exit()
+
+elif city == "Plovdiv":
+    if 0 <= sold_quantity <= 500:
+        commission = 0.055 * sold_quantity
+    elif sold_quantity <= 1000:
+        commission = 0.08 * sold_quantity
+    elif sold_quantity <= 10000:
+        commission = 0.12 * sold_quantity
+    elif sold_quantity > 10000:
+        commission = 0.145 * sold_quantity
+    else:
+        print("error")
+        exit()
+
+
+else:
+    print("error")
+    exit()
+
+
+print(f"{commission:.2f}")
