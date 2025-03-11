@@ -1,1 +1,1 @@
-# Small-Shop
+# Python projects
